@@ -1,0 +1,11 @@
+.card{
+    
+    font-family: 'Times New Roman', Times, serif;
+    background-image:linear-gradient(to bottom left,yellow,red,yellow);
+    font-size: 16px;
+    margin-right:500px ;
+    justify-self:center;
+    border-radius: 20px;
+    padding: 5px;
+
+}

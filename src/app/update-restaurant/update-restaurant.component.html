@@ -1,0 +1,38 @@
+ <h2> Update Restaurant </h2>
+ <!--If we want update any details in that form we can update-->
+ <!--ngModel-It is two way binding(it will go to backend assign the value and return to the frondend)-->
+    <div class="card">
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label class="label1"> Restaurant Name</label>
+            <input type="text" class ="form-control" id = "restaurantName"
+                [(ngModel)] = "restaurant.restaurantName" name = "restaurantName">
+        </div>
+
+        <div class="form-group">
+            <label class="label1"> Owner Name</label>
+            <input type="text" class ="form-control" id = "ownerName"
+                [(ngModel)] = "restaurant.ownerName" name = "ownerName">
+        </div>
+
+        <div class="form-group">
+            <label class="label1"> Food Type</label>
+            <input type="text" class ="form-control" id = "foodtype"
+                [(ngModel)] = "restaurant.foodType" name = "foodType">
+        </div>
+        <div class="form-group">
+            <label class="label1"> Ratings</label>
+            <input type="text" class ="form-control" id = "rating"
+                [(ngModel)] = "restaurant.rating" name = "rating">
+        </div>
+        <div class="form-group">
+            <label class="label1"> Location</label>
+            <input type="text" class ="form-control" id = "location"
+                [(ngModel)] = "restaurant.location" name = "location">
+        </div>
+        <!--If we click confirmupdate method it will show the popup message and once we put ok it will update the details-->
+        <button (click)="confirmupdate()" class = "btn btn-success" type ="submit">Submit</button>
+
+    </form>
+ </div>

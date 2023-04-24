@@ -1,0 +1,9 @@
+body{
+    background-image: url("C:\Users\ELCOT\Desktop\Fullstack Project\Restaurant\src\assets\respic.jpg");
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+   text-overflow: ellipsis;
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>  
+<html lang="en">  
+  
+<head>  
+    <title>Ajay Malik Bootstrap Example</title>  
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+</head>  
+ <body>  
+ 
+   <!--<div class="image col-md-8" align="center">
+    <img src="..\assets\swiggy.jpg" alt="">
+     </div>-->
+     <!--ngModel-It is two way binding(it will go to backend assign the value and return to the frondend)-->
+     <!--If we want  to go to login page we have to login, we need to give username and password-->
+      <div class="card">
+        
+       <h2 align="center">Welcome To Our Restaurant! Login</h2>
+       <form>
+            <div class="form-group">
+  
+              <label for="username">Username</label>
+              <input type="username" name="username" class="form-control name" id="username" aria-describedby="username" placeholder="Enter Username" [(ngModel)]="username">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" name ="password" class="form-control name" id="exampleInputPassword1" placeholder="Enter Password" [(ngModel)]="password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <!--If we click login method it will show the popup message and in that pop message  will save password like that asked-->
+
+           <button (click)=checkLogin() type="login" class="btn btn-success"  style="margin-left:15px">Login</button>
+           <button (click)=signup() type="signup" class="btn btn-success">Sign Up</button>
+        </form>
+    </div>
+      
+     
+  </body>  
+  
+</html>  
