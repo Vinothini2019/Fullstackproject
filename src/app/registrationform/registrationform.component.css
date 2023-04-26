@@ -1,0 +1,21 @@
+.card{
+    
+    font-family: 'Times New Roman', Times, serif;
+    background-image:linear-gradient(to bottom left,yellow,red,yellow);
+    font-size: 16px;
+    margin-right:500px ;
+    
+    justify-self:center;
+    border-radius: 30px;
+    padding: 5px;
+
+}
+
+.text1{
+    size-adjust: 100px;
+}
+
+.btn-success{
+    margin-left: 40%;
+    margin-right: 40%;
+}

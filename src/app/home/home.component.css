@@ -1,0 +1,12 @@
+.card{
+    
+    justify-self:center;
+    border-radius: 25px;
+    display:flex;
+
+}
+
+.pic{
+    margin-left: 250px;
+    margin-right: 200px;
+}

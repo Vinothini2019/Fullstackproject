@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="list row">
+    <!--It will show the list of restuarants details-->
+ <!--ngModel-It is two way binding(it will go to backend assign the value and return to the frondend)-->
+        <div class="input-group mb-4">
+           
+            <input type="text" class="form-control" name="restaurantName" placeholder="Search by Restaurant" style="width:20%" [(ngModel)] = "restaurantName" />
+            
+                <button class="btn2" type="button" (click)="searchByName()">
+                    <i class="fa fa-search"></i>
+                </button>
+            
+            
+    </div>
+</div>
+<h2> Restaurant List</h2>
+<!--If we click veg hotel list method it will show thelist of veg hotel list-->
+<!--If we click nonveg hotel list method it will show thelist of non veg hotel list-->
+<button class="btn btn-outline-primary" type="button" (click)="fetchVegHotel()">
+    Veg Hotel List
+  </button>
+  <button class="btn btn-outline-primary" type="button" (click)="fetchNonVegHotel()">
+    NonVeg Hotel List
+  </button>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Restaurant Name</th>
+            <th> Owner Name </th>
+            <th> FoodType </th>
+            <th> Rating</th>
+            <th> Location </th>
+            <th> Actions </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let eachRestaurant of restaurant" >
+            <td class="res"> {{ eachRestaurant.restaurantName }} </td>
+            <td class="res"> {{ eachRestaurant.ownerName }} </td>
+            <td class="res"> {{ eachRestaurant.foodType}} </td>
+            <td class="res"> {{ eachRestaurant.rating}}</td>
+            <td class="res"> {{eachRestaurant.location}}</td>
+            <td class="button1">
+                <!--If we click delete  method it will show the delete the hotel details-->
+                <!--If we click upadte  method it will update the hotel details-->
+                  <!--If we click view  method it will show the view the hotel details-->
+                <button (click) = "confirmUpdate(eachRestaurant)" class = "btn btn-outline-success"> Update</button>
+                <button (click) = "confirmDelete(eachRestaurant)" class = "btn btn-outline-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "restaurantDetails(eachRestaurant.hotelId)" class = "btn btn-outline-success" style="margin-left: 10px"> View</button>
+            </td>
+            </tr>
+          <tr scope="row" *ngIf="restaurant.length === 0">
+                <td colspan="5" class="text-center">No records found</td>
+             </tr>
+             <button type="submit"  *ngIf="restaurant.length !== 0"Style="margin-left:225%; background-color: rgb(241, 115, 115); color: black; border-radius: 30%;" (click)="confirmRemoveAll()">RemoveAll</button>
+     
+         </tbody>
+     </table>
+    
+
+             

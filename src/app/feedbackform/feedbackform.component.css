@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.center{
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+.center .stars{
+    height:150px;
+    width:500px;
+    text-align: center;
+}
+.stars input{
+    display:none;
+}
+.stars label{
+    float:right;
+    font-size: 100px;
+    color:lightgrey;
+    margin:0 5px;
+    text-shadow:1px 1px #bbb;
+    
+
+}
+.stars label:before{
+    content:'*';
+}
+.stars input:checked~label{
+    color:gold;
+    text-shadow:1px 1px #c60;
+}
+.stars:not(:checked)>label:hover,
+.stars:not(:checked)>label:hover~label{
+  color:gold;
+  text-shadow:1px 1px goldenrod;
+
+}
+.stars.result{
+    position:absolute;
+    left:50%;
+    transform:translatex(-50%);
+    bottom:-30px;
+    font-size: 30px;
+    font-weight: 500;
+    color:gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: none;
+}
+
+.stars input:checked ~ .result{
+    display: block;
+
+}
+.stars #five:checked ~ .result:before{
+    content:"I Love It"
+}
+.stars #four:checked ~ .result:before{
+    content:"I Like It"
+}
+.stars #three:checked ~ .result:before{
+    content:"Its Good"
+}
+.stars #two:checked ~ .result:before{
+    content:"I Dont Like It"
+}
+.stars #one:checked ~ .result:before{
+    content:"I hate It"
+}
+.card{
+    
+    font-family: 'Times New Roman', Times, serif;
+    background-image:linear-gradient(to bottom left,rgb(37, 98, 189),rgb(214, 26, 173),rgb(0, 225, 255));
+    font-size: 16px;
+    margin-right:200px ;
+    justify-self:center;
+    border-radius: 20px;
+    padding: 100px;
+    margin-left: 300px;
+    align-items: center;
+
+}

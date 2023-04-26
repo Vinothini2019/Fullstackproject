@@ -1,0 +1,57 @@
+<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+  <ul class = "navbar-nav" >
+    <li class = "nav-item" >
+      <a  *ngIf="loginService.isUserLoggedIn()" routerLink="home" routerLinkActive="active" class="nav-link"  style="font-size:15px; color: rgb(189, 26, 153);" ><i class="fa-solid fa-bars"></i>Home</a>
+  </li>
+      <li class = "nav-item">
+          <a  *ngIf="loginService.isUserLoggedIn()" routerLink="restaurant" routerLinkActive="active" class="nav-link"  style="font-size:15px; color: rgb(189, 26, 153);">Restaurant List</a>
+      </li>
+      <li class = "nav-item">
+          <a  *ngIf="loginService.isUserLoggedIn()" routerLink="create-restaurant" routerLinkActive="active" class="nav-link"  style="font-size:15px; color: rgb(189, 26, 153);">Add Restaurant</a>
+      </li>
+      <li>
+        <li class = "nav-item">
+        <a *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a>
+    </li>
+    <li class = "nav-item">
+      <a *ngIf="loginService.isUserLoggedIn()" routerLink="registrationform" routerLinkActive="active" class="nav-link"  style="font-size:15px; color: rgb(189, 26, 153);">Registration</a>
+  </li>   
+    <li class = "nav-item">
+      <a  *ngIf="loginService.isUserLoggedIn()" routerLink="feedback" routerLinkActive="active" class="nav-link"  style="font-size:15px; color: rgb(189, 26, 153);" >Feedback</a>
+  </li>
+  <li class = "nav-item">
+    <a *ngIf="loginService.isUserLoggedIn()" routerLink="profile-card" routerLinkActive="active" class="nav-link"  style="font-size:15px; color: rgb(189, 26, 153);" >Profile Card</a>
+</li>
+<li class = "nav-item">
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="about-us" routerLinkActive="active" class="nav-link"  style="font-size:15px; color: rgb(189, 26, 153);" >About Us</a>
+</li>
+<li class = "nav-item">
+  <a *ngIf="loginService.isUserLoggedIn()" routerLink="contact-us" routerLinkActive="active" class="nav-link"  style="font-size:15px; color: rgb(189, 26, 153);" >Contact Us</a>
+</li>
+  </ul>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+    <ul class="nav nav-pills">
+     <!-- <li class = "nav-item">
+        <a *ngIf="loginService.isUserLoggedIn()" routerLink="about-us" routerLinkActive="active" class="nav-link" >About Us</a>
+      </li>-->
+    <li class = "nav-item">
+      <a  *ngIf="loginService.isUserLoggedIn()"  routerLink="/logout" routerLinkActivate="active" class="nav-link"
+      style="font-size:15px; color: rgb(189, 26, 153);"><i class="fa fa-sign-out fa-1px"></i>Logout</a> 
+    </li> 
+     <br/>
+  </ul>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<h1 class="text-center"> {{title}} </h1>
+<div class = "container">
+  <router-outlet></router-outlet>
+</div>
+
+

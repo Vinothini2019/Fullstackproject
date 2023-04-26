@@ -1,0 +1,28 @@
+<h2>Registration</h2>
+<!--We need to create a account for us-->
+ <!--ngModel-It is two way binding(it will go to backend assign the value and return to the frondend)-->
+<div >
+<form>
+    <div class="card" col-md-8>
+<label>First Name</label>
+<input type="text" name="firstname" class="text1" placeholder="Firstname" [(ngModel)]="firstname" required><br>
+<label>Last Name</label>
+<input type="text" name="lastname" class="text1" placeholder="Lastname" [(ngModel)]="lastname" required><br>
+<label>Password</label>
+     <input type="password" name ="password"  placeholder="Enter Password"  [(ngModel)]="password" required>
+            
+
+<label>Gender</label>  
+<tr>
+ <input type="radio"  name="gender" checked ><b>Male</b>
+    <input type="radio"  name="gender" ><b>Female</b><br></tr> 
+    <label>Mobile Number</label>       
+<input type="text" class="text1" name="mobileno" placeholder="mobilenumber"  [(ngModel)]="mobilenumber" required><br>
+<!--If we click onregister method it will show the popup message and once we put ok it will submit the details-->
+<button (click)="onregister()" type="submit" class="btn btn-success" align="center">Submit</button>
+</div>
+<div class="pic" col-md-4>
+    <img src="...\assets\restaurantimage.jpg" alt="">
+</div>
+</form>
+</div>

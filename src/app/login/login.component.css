@@ -1,0 +1,26 @@
+.card{
+    background-image:linear-gradient(to bottom left,yellow,red,yellow);
+    margin-left:30% ;
+    margin-right: 30%;
+    padding: 50px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    border-radius: 30%;
+   
+
+}
+.name{
+    border-radius: 20%;
+    font-size: 20px;
+    font-family: none;
+
+}
+.h2{
+   text-align: center;
+   color: aqua;
+   outline: none;
+}
+.btn-success{
+    margin-right: 10%;
+}
