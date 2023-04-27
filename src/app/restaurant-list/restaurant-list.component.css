@@ -1,0 +1,38 @@
+.table{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 20px;
+padding: 5%;
+text-shadow: 5%;
+border-radius: 5%;
+background-image:linear-gradient(to bottom left,yellow,red,yellow);
+margin-right: 500px;
+}
+
+.res{
+    
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(238, 47, 165);
+}
+
+.button1{
+    background-color:rgb(22, 19, 209);
+    border-radius: 5%;
+}
+
+.btn{
+    
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin:20px;
+    background-color: rgb(245, 237, 245);
+    justify-content: center;
+      
+}
+.search{
+ 
+    margin-right: 100px;
+    border-radius: 30%;
+}
+
+

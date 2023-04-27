@@ -1,0 +1,12 @@
+.card{
+    background-image:linear-gradient(to bottom left,yellow,red,yellow);
+    margin-left:30% ;
+    margin-right: 30%;
+    padding: 50px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    border-radius: 30%;
+   
+
+}

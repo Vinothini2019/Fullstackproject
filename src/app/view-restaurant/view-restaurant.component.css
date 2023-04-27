@@ -1,0 +1,11 @@
+.table{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 5%;
+    text-shadow: 5%;
+    border-radius: 5%;
+    background-image:linear-gradient(to bottom left,yellow,red,yellow);
+    margin-right: 100px;
+  
+    }
+    
